@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh auth status && git -C \"/home/francisco/Documents/Claude/Landing Page\" status 2>&1)",
+      "Bash(cd:*)",
+      "Bash(wrangler:*)",
+      "Bash(node --version && npm --version 2>&1)",
+      "Bash(tail:*)"
+    ]
+  }
+}
