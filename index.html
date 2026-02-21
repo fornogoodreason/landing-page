@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For No Good Reason</title>
+  <meta name="description" content="Web experiments, absurd simulations, and game analysis — all for no good reason. Exaggerated effort applied to mundane problems.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="For No Good Reason">
+  <meta property="og:description" content="Web experiments, absurd simulations, and game analysis — all for no good reason.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fornogoodreason.org">
+  <meta property="og:image" content="https://fornogoodreason.org/background.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="logo.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <img src="logo.png" alt="For No Good Reason">
+        <span>For No Good Reason</span>
+      </a>
+      <a href="https://buymeacoffee.com/fornogoodreason" target="_blank" rel="noopener noreferrer" class="btn btn-nav">
+        ☕ Support
+      </a>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <img src="logo.png" alt="For No Good Reason Logo" class="hero-logo">
+      <h1>For No Good Reason</h1>
+      <p class="hero-tagline">
+        Web experiments, absurd simulations, and game analysis.<br>
+        All for no good reason.
+      </p>
+      <p class="hero-sub">Exaggerated effort applied to mundane problems.</p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn btn-primary">Explore Projects</a>
+        <a href="https://buymeacoffee.com/fornogoodreason" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">☕ Fund the Lab</a>
+      </div>
+    </div>
+    <a href="#projects" class="scroll-hint" aria-label="Scroll to projects">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"/>
+      </svg>
+    </a>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2>The Lab</h2>
+        <p>Things I built when I should have been doing something else.</p>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Face the Odds -->
+        <div class="project-card live">
+          <span class="card-badge badge-live">● Live</span>
+          <div class="card-icon">🎲</div>
+          <h3>Face the Odds</h3>
+          <p>Probability, decision trees, and the eternal question: are the odds ever actually in your favor? An interactive tool for exploring risk and chance through the lens of games.</p>
+          <a href="/face-the-odds" class="btn btn-primary btn-sm">Launch →</a>
+        </div>
+
+        <!-- Coming Soon 1 -->
+        <div class="project-card soon">
+          <span class="card-badge badge-soon">Coming Soon</span>
+          <div class="card-icon">🔬</div>
+          <h3>Next Experiment</h3>
+          <p>Something is brewing in the lab. It involves too much math, questionable methodology, and zero practical application. Stay tuned.</p>
+          <span class="btn btn-muted btn-sm">In the Lab</span>
+        </div>
+
+        <!-- Coming Soon 2 -->
+        <div class="project-card soon">
+          <span class="card-badge badge-soon">Coming Soon</span>
+          <div class="card-icon">📊</div>
+          <h3>Another One</h3>
+          <p>It will either be brilliant or completely pointless. Possibly both. That's kind of the whole point.</p>
+          <span class="btn btn-muted btn-sm">In the Lab</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SUPPORT ===== -->
+  <section class="support">
+    <div class="container">
+      <div class="support-inner">
+        <div class="support-text">
+          <h2>Fund the Madness</h2>
+          <p>
+            If something made you laugh, think, or question your life choices —
+            you can help keep the lab running. No pressure. Unless you liked it.
+            Then a little pressure.
+          </p>
+        </div>
+        <a href="https://buymeacoffee.com/fornogoodreason" target="_blank" rel="noopener noreferrer" class="btn btn-coffee">
+          ☕ Buy Me a Coffee
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="logo.png" alt="For No Good Reason">
+        <span>For No Good Reason</span>
+      </div>
+      <p class="footer-copy">© 2026 · fornogoodreason.org</p>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
