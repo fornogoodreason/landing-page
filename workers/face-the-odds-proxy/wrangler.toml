@@ -1,0 +1,7 @@
+name = "face-the-odds-proxy"
+main = "worker.js"
+compatibility_date = "2025-01-01"
+
+routes = [
+  { pattern = "fornogoodreason.org/face-the-odds*", zone_name = "fornogoodreason.org" }
+]
